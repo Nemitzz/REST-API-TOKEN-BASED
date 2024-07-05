@@ -82,6 +82,7 @@ Explanation of how the routes work.
 
    **Exemple (using Insomnia):**
 
+*
    Response:
 ```Json
   [
@@ -108,6 +109,7 @@ Explanation of how the routes work.
 
     **Exemple (using Insomnia):**
 
+*
     Response:
 ```Json
   [
@@ -147,11 +149,8 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
-
-
+*
     Response:
-
-
 ```Json
   [
     {
@@ -190,11 +189,8 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
-
-
+*
     Response:
-
-
 ```Json
   [
     {
@@ -218,10 +214,8 @@ Explanation of how the routes work.
     Deletes an existing item by `:id` in the URL.
 
     **Exemple (using Insomnia):**
-
+*
     Response:
-
-
 ```Json
 {
   "deleted": "true"
@@ -244,11 +238,8 @@ Explanation of how the routes work.
   "password": "password"
 }
 ```
-
-
+*
     Response:
-
-
 ```Json
 {
   "id": "#",
@@ -273,11 +264,8 @@ Explanation of how the routes work.
   "password": "password"
 }
 ```
-
-
+*
     Response:
-
-
 ```Json
 {
   "id": "#",
@@ -292,10 +280,8 @@ Explanation of how the routes work.
     Deletes an existing user by `:id` in the URL.
 
     **Exemple (using Insomnia):**
-
+*
     Response:
-
-
 ```Json
 {
   "deleted": "true"
@@ -307,10 +293,8 @@ Explanation of how the routes work.
     Uploads an image with a random and unique name and links it to the specified user in the URL.
 
     **Exemple (using Insomnia):**
-
+*
     Response:
-
-
 ```Json
 {
   "originalname":"original name of the image",
@@ -335,11 +319,8 @@ Explanation of how the routes work.
   "password":"correspondingpassword"
 }
 ```
-
-
+*
     Response:
-
-
 ```Json
 {
   "token":"token_generated_by_JWT"
@@ -353,11 +334,8 @@ Explanation of how the routes work.
     Shows the Home page
 
     **Exemple (using Insomnia):**
-
-
+*
     Response:
-
-
 ```Json
 {
   "index"
@@ -454,10 +432,8 @@ Explicação de como funcionam as rotas.
    Retorna uma lista de todos os Items catalogados.
 
    **Exemplo (usando Insomnia):**
-
+*
    Resposta:
-
-
 ```Json
   [
     {
@@ -482,12 +458,8 @@ Explicação de como funcionam as rotas.
     Retorna o item especificado pelo `:id` na URL.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Resposta:
-
-
-
 ```Json
   [
     {
@@ -527,11 +499,8 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
-
-
+*
     Resposta:
-
-
 ```Json
   [
     {
@@ -571,11 +540,8 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
-
-
+*
     Resposta:
-
-
 ```Json
   [
     {
@@ -598,11 +564,8 @@ Explicação de como funcionam as rotas.
   - **DELETE items/:id**
 
     Delete um item existente pelo `:id` na URL.
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "deleted": "true"
@@ -626,11 +589,8 @@ Explicação de como funcionam as rotas.
   "password": "password"
 }
 ```
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "id": "#",
@@ -657,11 +617,8 @@ Explicação de como funcionam as rotas.
   "password": "password"
 }
 ```
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "id": "#",
@@ -676,11 +633,8 @@ Explicação de como funcionam as rotas.
     Delete um usuário existente pelo `:id` na URL.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "deleted": "true"
@@ -692,11 +646,8 @@ Explicação de como funcionam as rotas.
     Envia uma imagem com nome aleatório e único e à liga com o usuário especificado na URL.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "originalname":"nome original da imagem",
@@ -722,11 +673,8 @@ Explicação de como funcionam as rotas.
   "password":"senhacorrespondente"
 }
 ```
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "token":"token_gerado_por_JWT"
@@ -740,11 +688,8 @@ Explicação de como funcionam as rotas.
     Mostra a Home page.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Resposta:
-
-
 ```Json
 {
   "index"
