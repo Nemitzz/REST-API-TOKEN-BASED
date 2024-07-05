@@ -135,7 +135,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Request body:
-
+-
 ```Json
 {
       "name": "Item #",
@@ -148,7 +148,7 @@ Explanation of how the routes work.
 ```
 
     Response:
-
+-
 ```Json
   [
     {
@@ -175,7 +175,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Request body:
-
+-
 ```Json
 {
       "name": "Updated Item 1",
@@ -188,7 +188,7 @@ Explanation of how the routes work.
 ```
 
     Response:
-
+-
 ```Json
   [
     {
@@ -214,7 +214,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Response:
-
+-
 ```Json
 {
   "deleted": "true"
@@ -228,7 +228,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Request body:
-
+-
 ```Json
 {
   "name": "name",
@@ -238,7 +238,7 @@ Explanation of how the routes work.
 ```
 
     Response:
-
+-
 ```Json
 {
   "id": "#",
@@ -255,7 +255,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Request body:
-
+-
 ```Json
 {
   "name": "updated_name",
@@ -265,7 +265,7 @@ Explanation of how the routes work.
 ```
 
     Response:
-
+-
 ```Json
 {
   "id": "#",
@@ -282,7 +282,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Response:
-
+-
 ```Json
 {
   "deleted": "true"
@@ -296,7 +296,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Response:
-
+-
 ```Json
 {
   "originalname":"original name of the image",
@@ -313,6 +313,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Request body:
+-
 ```Json
 {
   "email":"emailcreatedinusersroute@email.com",
@@ -321,12 +322,13 @@ Explanation of how the routes work.
 ```
 
     Response:
-
+-
 ```Json
 {
   "token":"token_generated_by_JWT"
 }
 ```
+-
     In Insomnia, the token is inserted in the Header tab.
 
   - **GET /**
@@ -336,7 +338,7 @@ Explanation of how the routes work.
     **Exemple (using Insomnia):**
 
     Response:
-
+-
 ```Json
 {
   "index"
@@ -435,7 +437,7 @@ Explicação de como funcionam as rotas.
    **Exemplo (usando Insomnia):**
 
    Resposta:
-
+-
 ```Json
   [
     {
@@ -462,7 +464,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Resposta:
-
+-
 ```Json
   [
     {
@@ -489,7 +491,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Corpo da requisição:
-
+-
 ```Json
 {
       "name": "Item #",
@@ -502,7 +504,7 @@ Explicação de como funcionam as rotas.
 ```
 
     Resposta:
-
+-
 ```Json
   [
     {
@@ -529,7 +531,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Corpo da requisição:
-
+-
 ```Json
 {
       "name": "Item 1 atualizado",
@@ -542,7 +544,7 @@ Explicação de como funcionam as rotas.
 ```
 
     Resposta:
-
+-
 ```Json
   [
     {
@@ -567,7 +569,7 @@ Explicação de como funcionam as rotas.
     Delete um item existente pelo `:id` na URL.
 
     Resposta:
-
+-
 ```Json
 {
   "deleted": "true"
@@ -581,7 +583,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Corpo da requisição:
-
+-
 ```Json
 {
   "name": "name",
@@ -591,7 +593,7 @@ Explicação de como funcionam as rotas.
 ```
 
     Resposta:
-
+-
 ```Json
 {
   "id": "#",
@@ -608,7 +610,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Corpo da requisição:
-
+-
 ```Json
 {
   "name": "name_alterado",
@@ -618,7 +620,7 @@ Explicação de como funcionam as rotas.
 ```
 
     Resposta:
-
+-
 ```Json
 {
   "id": "#",
@@ -635,7 +637,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Resposta:
-
+-
 ```Json
 {
   "deleted": "true"
@@ -649,7 +651,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Resposta:
-
+-
 ```Json
 {
   "originalname":"nome original da imagem",
@@ -666,7 +668,7 @@ Explicação de como funcionam as rotas.
     **Exemplo (usando Insomnia):**
 
     Corpo da requisição:
-
+-
 ```Json
 {
   "email":"emailcriadonarotausers@email.com",
@@ -675,12 +677,13 @@ Explicação de como funcionam as rotas.
 ```
 
     Resposta:
-
+-
 ```Json
 {
   "token":"token_gerado_por_JWT"
 }
 ```
+-
     No Insomnia, o token é inserido na aba Header.
 
   - **GET /**
