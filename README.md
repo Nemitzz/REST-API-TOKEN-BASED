@@ -77,7 +77,7 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 Explanation of how the routes work.
 
 # ITEMS
- - **GET /items**
+ - # **GET /items**
 
    Returns a list of all cataloged Items
 
@@ -104,7 +104,7 @@ Explanation of how the routes work.
   ]
 ```
 
-  - **GET /items/:id**
+  - # **GET /items/:id**
 
     Returns the item specified by `:id` in the URL.
 
@@ -131,7 +131,7 @@ Explanation of how the routes work.
   ]
 ```
 
-  - **POST /items**
+  - # **POST /items**
 
     Creates a new item.
 
@@ -169,7 +169,7 @@ Explanation of how the routes work.
   ]
 ```
 
-  - **PUT /items/:id**
+  - # **PUT /items/:id**
 
     Updates an existing item by `:id` in the URL.
 
@@ -206,7 +206,7 @@ Explanation of how the routes work.
   ]
 ```
 
-  - **DELETE items/:id**
+  - # **DELETE items/:id**
 
     Deletes an existing item by `:id` in the URL.
 
@@ -221,7 +221,7 @@ Explanation of how the routes work.
 
 # USERS
 
-  - **POST /users**
+  - # **POST /users**
 
     Creates a new user.
 
@@ -246,7 +246,7 @@ Explanation of how the routes work.
 }
 ```
 
-  - **PUT /users:id**
+  - # **PUT /users:id**
 
     Edits an existing user by `:id` in the URL.
 
@@ -271,7 +271,7 @@ Explanation of how the routes work.
 }
 ```
 
-  - **DELETE users/:id**
+  - # **DELETE users/:id**
 
     Deletes an existing user by `:id` in the URL.
 
@@ -286,7 +286,7 @@ Explanation of how the routes work.
 
 # PHOTOS
 
-  - **POST /photos**
+  - # **POST /photos**
 
     Uploads an image with a random and unique name and links it to the specified user in the URL.
 
@@ -303,7 +303,7 @@ Explanation of how the routes work.
 
 # TOKEN
 
-  - **POST /tokens**
+  - # **POST /tokens**
 
     Logs in the user and generates an authorization token.
     This token is required to create and edit cataloged Items.
@@ -328,7 +328,7 @@ Explanation of how the routes work.
 
 # HOME
 
-  - **GET /**
+  - # **GET /**
 
     Shows the Home page
 
@@ -428,7 +428,7 @@ Explicação de como funcionam as rotas.
 
 # ITEMS
 
- - **GET /items**
+ - # **GET /items**
 
    Retorna uma lista de todos os Items catalogados.
 
@@ -454,7 +454,7 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - **GET /items/:id**
+  - # **GET /items/:id**
 
     Retorna o item especificado pelo `:id` na URL.
 
@@ -480,7 +480,7 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - **POST /items**
+  - # **POST /items**
 
     Cria um novo item.
 
@@ -518,7 +518,7 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - **PUT /items/:id**
+  - # **PUT /items/:id**
 
     Atualiza um item existente pelo `:id` na URL.
 
@@ -556,7 +556,7 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - **DELETE items/:id**
+  - # **DELETE items/:id**
 
     Delete um item existente pelo `:id` na URL.
 *
@@ -569,7 +569,7 @@ Explicação de como funcionam as rotas.
 
 # USERS
 
-  - **POST /users**
+  - # **POST /users**
 
     Cria um novo usuário.
 
@@ -594,7 +594,7 @@ Explicação de como funcionam as rotas.
 }
 ```
 
-  - **PUT /users:id**
+  - # **PUT /users:id**
 
     Edita um usuário existente pelo `:id` na URL.
 
@@ -619,7 +619,7 @@ Explicação de como funcionam as rotas.
 }
 ```
 
-  - **DELETE users/:id**
+  - # **DELETE users/:id**
 
     Delete um usuário existente pelo `:id` na URL.
 
@@ -634,7 +634,7 @@ Explicação de como funcionam as rotas.
 
 # PHOTOS
 
-  - **POST /photos**
+  - # **POST /photos**
 
     Envia uma imagem com nome aleatório e único e à liga com o usuário especificado na URL.
 
@@ -651,7 +651,7 @@ Explicação de como funcionam as rotas.
 
 # TOKEN
 
-  - **POST /tokens**
+  - # **POST /tokens**
 
     Loga o usuário e gera um token de autorização.
     Esse token é necessário para criar e editar Items catalogados.
@@ -676,7 +676,7 @@ Explicação de como funcionam as rotas.
 
 # HOME
 
-  - **GET /**
+  - # **GET /**
 
     Mostra a Home page.
 
