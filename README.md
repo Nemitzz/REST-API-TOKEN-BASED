@@ -15,7 +15,7 @@ A simple and efficient API with token-based login/registration and person regist
 3. [Usage](#usage)
 4. [API Routes](#api-routes)
 
-   - **ITEMS**
+   - [**ITEMS**](#items)
    - [GET /items](#get-items)
    - [GET /items:id](#get-itemsid)
    - [POST /items](#post-items)
@@ -76,6 +76,7 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 
 Explanation of how the routes work.
 
+# ITEMS
  - **GET /items**
 
    Returns a list of all cataloged Items
@@ -105,7 +106,7 @@ Explanation of how the routes work.
 
   - **GET /items/:id**
 
-    RReturns the item specified by :id in the URL.
+    Returns the item specified by `:id` in the URL.
 
     **Exemple (using Insomnia):**
 
@@ -135,10 +136,8 @@ Explanation of how the routes work.
     Creates a new item.
 
     **Exemple (using Insomnia):**
-
+*
     Request body:
-
-
 ```Json
 {
       "name": "Item #",
@@ -175,10 +174,8 @@ Explanation of how the routes work.
     Updates an existing item by `:id` in the URL.
 
     **Exemple (using Insomnia):**
-
+*
     Request body:
-
-
 ```Json
 {
       "name": "Updated Item 1",
@@ -227,10 +224,8 @@ Explanation of how the routes work.
     Creates a new user.
 
     **Exemple (using Insomnia):**
-
+*
     Request body:
-
-
 ```Json
 {
   "name": "name",
@@ -254,9 +249,8 @@ Explanation of how the routes work.
     Edits an existing user by `:id` in the URL.
 
     **Exemple (using Insomnia):**
-
+*
     Request body:
--
 ```Json
 {
   "name": "updated_name",
@@ -309,10 +303,8 @@ Explanation of how the routes work.
     This token is required to create and edit cataloged Items.
 
     **Exemple (using Insomnia):**
-
+*
     Request body:
-
-
 ```Json
 {
   "email":"emailcreatedinusersroute@email.com",
@@ -484,11 +476,8 @@ Explicação de como funcionam as rotas.
     Cria um novo item.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Corpo da requisição:
-
-
 ```Json
 {
       "name": "Item #",
@@ -525,11 +514,8 @@ Explicação de como funcionam as rotas.
     Atualiza um item existente pelo `:id` na URL.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Corpo da requisição:
-
-
 ```Json
 {
       "name": "Item 1 atualizado",
@@ -577,11 +563,8 @@ Explicação de como funcionam as rotas.
     Cria um novo usuário.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Corpo da requisição:
-
-
 ```Json
 {
   "name": "name",
@@ -605,11 +588,8 @@ Explicação de como funcionam as rotas.
     Edita um usuário existente pelo `:id` na URL.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Corpo da requisição:
-
-
 ```Json
 {
   "name": "name_alterado",
@@ -662,11 +642,8 @@ Explicação de como funcionam as rotas.
     Esse token é necessário para criar e editar Items catalogados.
 
     **Exemplo (usando Insomnia):**
-
-
+*
     Corpo da requisição:
-
-
 ```Json
 {
   "email":"emailcriadonarotausers@email.com",
