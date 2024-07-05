@@ -22,18 +22,18 @@ A simple and efficient API with token-based login/registration and person regist
    - [PUT /items/:id](#put-items)
    - [DELETE /items:id](#delete-items)
 
-   - **USERS**
+   - [**USERS**](#users)
    - [POST /users](#post-users)
    - [PUT /users](#put-users)
    - [DELETE /users](#delete-users)
 
-   - **Photos**
+   - [**PHOTOS**](#photos)
    - [POST /photos](#post-photos)
 
-   - **Token**
+   - [**TOKEN**](#token)
    - [POST /tokens](#post-tokens)
 
-   - **HOME**
+   - [**HOME**](#home)
    - [GET /](#get-home)
 
 ## Instalation
@@ -219,6 +219,8 @@ Explanation of how the routes work.
 }
 ```
 
+# USERS
+
   - **POST /users**
 
     Creates a new user.
@@ -282,6 +284,8 @@ Explanation of how the routes work.
 }
 ```
 
+# PHOTOS
+
   - **POST /photos**
 
     Uploads an image with a random and unique name and links it to the specified user in the URL.
@@ -296,6 +300,8 @@ Explanation of how the routes work.
   "item_id":"id of the item linked to the photo"
 }
 ```
+
+# TOKEN
 
   - **POST /tokens**
 
@@ -318,8 +324,9 @@ Explanation of how the routes work.
   "token":"token_generated_by_JWT"
 }
 ```
--
     In Insomnia, the token is inserted in the Header tab.
+
+# HOME
 
   - **GET /**
 
@@ -358,25 +365,25 @@ Uma API simples e eficiente com logins/registros por tokens e cadastro de pessoa
 3. [Uso](#uso)
 4. [Rotas da API](#rotas-da-api)
 
-   - **ITEMS**
+   - [**ITEMS**](#items)
    - [GET /items](#get-items)
    - [GET /items:id](#get-itemsid)
    - [POST /items](#post-items)
    - [PUT /items/:id](#put-items)
    - [DELETE /items:id](#delete-items)
 
-   - **USERS**
+   - [**USERS**](#users)
    - [POST /users](#post-users)
    - [PUT /users](#put-users)
    - [DELETE /users](#delete-users)
 
-   - **Photos**
+   - [**PHOTOS**](#photos)
    - [POST /photos](#post-photos)
 
-   - **Token**
+   - [**TOKEN**](#token)
    - [POST /tokens](#post-tokens)
 
-   - **HOME**
+   - [**HOME**](#home)
    - [GET /](#get-home)
 
 ## Instalação
@@ -418,6 +425,8 @@ No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
 ## Rotas da API
 
 Explicação de como funcionam as rotas.
+
+# ITEMS
 
  - **GET /items**
 
@@ -558,6 +567,8 @@ Explicação de como funcionam as rotas.
 }
 ```
 
+# USERS
+
   - **POST /users**
 
     Cria um novo usuário.
@@ -621,6 +632,8 @@ Explicação de como funcionam as rotas.
 }
 ```
 
+# PHOTOS
+
   - **POST /photos**
 
     Envia uma imagem com nome aleatório e único e à liga com o usuário especificado na URL.
@@ -635,6 +648,8 @@ Explicação de como funcionam as rotas.
   "item_id":"id do item ligado à foto"
 }
 ```
+
+# TOKEN
 
   - **POST /tokens**
 
@@ -657,8 +672,9 @@ Explicação de como funcionam as rotas.
   "token":"token_gerado_por_JWT"
 }
 ```
--
     No Insomnia, o token é inserido na aba Header.
+
+# HOME
 
   - **GET /**
 
