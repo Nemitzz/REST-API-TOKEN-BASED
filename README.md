@@ -365,26 +365,26 @@ Uma API simples e eficiente com logins/registros por tokens e cadastro de pessoa
 3. [Uso](#uso)
 4. [Rotas da API](#rotas-da-api)
 
-   - [**ITEMS**](#items)
-   - [GET /items](#get-items)
-   - [GET /items:id](#get-itemsid)
-   - [POST /items](#post-items)
-   - [PUT /items/:id](#put-items)
-   - [DELETE /items:id](#delete-items)
+   - [**ITEMS**](#items-1)
+   - [GET /items](#get-items-1)
+   - [GET /items:id](#get-itemsid-1)
+   - [POST /items](#post-items-1)
+   - [PUT /items/:id](#put-items-1)
+   - [DELETE /items:id](#delete-items-1)
 
-   - [**USERS**](#users)
-   - [POST /users](#post-users)
-   - [PUT /users](#put-users)
-   - [DELETE /users](#delete-users)
+   - [**USERS**](#users-1)
+   - [POST /users](#post-users-1)
+   - [PUT /users](#put-users-1)
+   - [DELETE /users](#delete-users-1)
 
-   - [**PHOTOS**](#photos)
-   - [POST /photos](#post-photos)
+   - [**PHOTOS**](#photos-1)
+   - [POST /photos](#post-photos-1)
 
-   - [**TOKEN**](#token)
-   - [POST /tokens](#post-tokens)
+   - [**TOKEN**](#token-1)
+   - [POST /tokens](#post-tokens-1)
 
-   - [**HOME**](#home)
-   - [GET /](#get-home)
+   - [**HOME**](#home-1)
+   - [GET /](#get-home-1)
 
 ## Instalação
 
