@@ -56,7 +56,12 @@ Instructions on how to properly configure the environment.
   DATABASE_PORT=YOUR_DATABASE_PORT
   DATABASE_USERNAME=YOUR_DATABASE_USERNAME
   DATABASE_PASSWORD=YOUR_DATABASE_PASSWORD
+
   SECRET_TOKEN=YOUR_SECRET_TOKEN
+  TOKEN_EXPIRATION=7d
+
+  APP_URL=http://localhost:
+  APP_PORT=3001
 ```
 - Run a migration of the tables using the command: `npx sequelize-cli db:migrate`
 
@@ -140,6 +145,7 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
+
     Response:
 ```Json
   [
@@ -177,6 +183,7 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
+
     Response:
 ```Json
   [
@@ -388,7 +395,12 @@ Instruções de como configurar corretamente o ambiente.
   DATABASE_PORT=SUA_DATABASE_PORT
   DATABASE_USERNAME=SUA_DATABASE_USERNAME
   DATABASE_PASSWORD=SUA_DATABASE_PASSWORD
-  SECRET_TOKEN=SUASECRETTOKEN
+
+  SECRET_TOKEN=SUA_SECRET_TOKEN
+  TOKEN_EXPIRATION=7d
+
+  APP_URL=http://localhost:
+  APP_PORT=3001
 ```
 - Faça uma migração das tabelas usando o comando: `npx sequelize-cli db:migrate`
 
@@ -472,6 +484,7 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
+
     Resposta:
 ```Json
   [
@@ -509,6 +522,7 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
+
     Resposta:
 ```Json
   [
@@ -632,6 +646,7 @@ Explicação de como funcionam as rotas.
   "password":"senhacorrespondente"
 }
 ```
+
     Resposta:
 ```Json
 {
