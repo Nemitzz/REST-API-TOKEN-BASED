@@ -11,7 +11,7 @@ A simple and efficient API with token-based login/registration and person regist
 ## Index
 
 1. [Instalation](#instalation)
-2. [Config](#config)
+2. [Config](#configuration)
 3. [Usage](#usage)
 4. [API Routes](#api-routes)
 
