@@ -392,12 +392,12 @@ Explanation of how the routes work.
 ## Extras
 
 - **Technologies Used**
-    -Javascript
-    -NodeJS;
-    -Sequelize
-    -Express
-    -Multer
-    -MariaDB
+    - JavaScript
+    - Node.js
+    - Sequelize
+    - Express
+    - Multer
+    - MariaDB
 
 - The application has `login_required` middlewares, which make certain actions
   require an authorization token to be performed.
@@ -798,10 +798,12 @@ Explicação de como funcionam as rotas.
 ## Extra
 
 - **Tecnologias usadas**
-    -NodeJS;
-    -React (ReactDOM, Redux, Reducer, Persist, Saga);
-    -HTML;
-    -CSS
+    - JavaScript
+    - Node.js
+    - Sequelize
+    - Express
+    - Multer
+    - MariaDB
 
 - A aplicação possui middlewared de `login_required`, fazendo com que certas
   ações necessitem de um token de autorização para serem realizadas.
