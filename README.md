@@ -39,7 +39,7 @@ registration.
    - [**HOME**](#home)
    - [GET /](#get-home)
 
-5. [Extras](#extras)
+5. [Extras + API Consumer](#extras-+-api-consumer)
 
 ---
 
@@ -103,7 +103,7 @@ Explanation of how the routes work.
 
   Returns a list of all cataloged Items
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -130,7 +130,7 @@ Explanation of how the routes work.
 
   Returns the item specified by `:id` in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -157,7 +157,7 @@ Explanation of how the routes work.
 
   Creates a new item.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Request body:
 
@@ -197,7 +197,7 @@ Explanation of how the routes work.
 
   Updates an existing item by `:id` in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Request body:
 
@@ -236,7 +236,7 @@ Explanation of how the routes work.
 
   Deletes an existing item by `:id` in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -254,7 +254,7 @@ Explanation of how the routes work.
 
   Creates a new user.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Request body:
 
@@ -281,7 +281,7 @@ Explanation of how the routes work.
 
   Edits an existing user by `:id` in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Request body:
 
@@ -308,7 +308,7 @@ Explanation of how the routes work.
 
   Deletes an existing user by `:id` in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -327,7 +327,7 @@ Explanation of how the routes work.
   Uploads an image with a random and unique name and links it to the specified
   user in the URL.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -348,7 +348,7 @@ Explanation of how the routes work.
   Logs in the user and generates an authorization token. This token is required
   to create and edit cataloged Items.
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Request body:
 
@@ -377,7 +377,7 @@ Explanation of how the routes work.
 
   Shows the Home page
 
-  **Exemple (using Insomnia):**
+  **Example (using Insomnia):**
 
 * Response:
 
@@ -389,7 +389,7 @@ Explanation of how the routes work.
 
 ---
 
-## Extras
+## Extras + API Consumer
 
 - **Technologies Used**
     - JavaScript
@@ -403,6 +403,8 @@ Explanation of how the routes work.
   require an authorization token to be performed.
 
 - All tests were done using [Insomnia](https://insomnia.rest/)
+
+- I've also developed a React application that consumes this API. You can read its documentation and download it [HERE](https://github.com/Nemitzz/React-API-Consumer)
 
 - This is a project from the course I am taking on Udemy, with professor Luiz
   Otávio Miranda:
@@ -447,7 +449,7 @@ pessoas.
    - [**HOME**](#home-1)
    - [GET /](#get-home-1)
 
-5. [Extra](#extra)
+5. [Extra + Consumo API](#extra-+-consumo-api)
 
 ---
 
@@ -795,7 +797,7 @@ Explicação de como funcionam as rotas.
 
 ---
 
-## Extra
+## Extra + Consumo API
 
 - **Tecnologias usadas**
     - JavaScript
@@ -809,6 +811,8 @@ Explicação de como funcionam as rotas.
   ações necessitem de um token de autorização para serem realizadas.
 
 - Todos os testes foram feitos usando [Insomnia](https://insomnia.rest/)
+
+- Também desenvolvi um aplicativo em React que consome esta API, você pode ler sua documentação e baixá-lo [AQUI](https://github.com/Nemitzz/React-API-Consumer)
 
 - Este é um projeto do curso que estou fazendo na Udemy, com o professor Luiz
   Otávio Miranda:
