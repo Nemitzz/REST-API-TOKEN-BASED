@@ -39,7 +39,7 @@ registration.
    - [**HOME**](#home)
    - [GET /](#get-home)
 
-5. [Extras + API Consumer](#extras-+-api-consumer)
+5. [Extras + API Consumer](#extras--api-consumer)
 
 ---
 
@@ -449,7 +449,7 @@ pessoas.
    - [**HOME**](#home-1)
    - [GET /](#get-home-1)
 
-5. [Extra + Consumo API](#extra-+-consumo-api)
+5. [Extra + Consumo API](#extra--consumo-api)
 
 ---
 
