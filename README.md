@@ -6,7 +6,8 @@
 
 ### API REST
 
-A simple and efficient API with token-based login/registration and person registration.
+A simple and efficient API with token-based login/registration and person
+registration.
 
 ## Index
 
@@ -36,13 +37,16 @@ A simple and efficient API with token-based login/registration and person regist
    - [**HOME**](#home)
    - [GET /](#get-home)
 
+5. [Extras](#extras)
+
 ## Instalation
 
-Instructions for downloading the repository and installing the API dependencies.
+Instructions for download the repository and install the API dependencies.
 
 In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
+
 - Clone the repository: `git clone <repository_url>`
-- Go to the cloned repository folder:  `cd your_folder_name`
+- Go to the cloned repository folder: `cd your_folder_name`
 - Install the dependencies: `npm install`
 
 ## Configuration
@@ -50,6 +54,7 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 Instructions on how to properly configure the environment.
 
 - Create a `.env` file in the project root and add the following variables
+
 ```env
   DATABASE=YOUR_DATABASE
   DATABASE_HOST=YOUR_DATABASE_HOST
@@ -63,13 +68,17 @@ Instructions on how to properly configure the environment.
   APP_URL=http://localhost:
   APP_PORT=3001
 ```
-- Run a migration of the tables using the command: `npx sequelize-cli db:migrate`
+
+- Run a migration of the tables using the command:
+  `npx sequelize-cli db:migrate`
 
 ## Usage
 
-Instructions on how to run the application locally.
+Instructions on how to run the application.
 
 In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
+
+- You will need a database (MariaDB), it can be local
 - Run the following command: `npm run dev`
 
 ## API Routes
@@ -77,14 +86,15 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 Explanation of how the routes work.
 
 # ITEMS
- - # **GET /items**
 
-   Returns a list of all cataloged Items
+- # **GET /items**
 
-   **Exemple (using Insomnia):**
+  Returns a list of all cataloged Items
 
-*
-   Response:
+  **Exemple (using Insomnia):**
+
+* Response:
+
 ```Json
   [
     {
@@ -104,14 +114,14 @@ Explanation of how the routes work.
   ]
 ```
 
-  - # **GET /items/:id**
+- # **GET /items/:id**
 
-    Returns the item specified by `:id` in the URL.
+  Returns the item specified by `:id` in the URL.
 
-    **Exemple (using Insomnia):**
+  **Exemple (using Insomnia):**
 
-*
-    Response:
+* Response:
+
 ```Json
   [
     {
@@ -131,13 +141,14 @@ Explanation of how the routes work.
   ]
 ```
 
-  - # **POST /items**
+- # **POST /items**
 
-    Creates a new item.
+  Creates a new item.
 
-    **Exemple (using Insomnia):**
-*
-    Request body:
+  **Exemple (using Insomnia):**
+
+* Request body:
+
 ```Json
 {
       "name": "Item #",
@@ -148,8 +159,9 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
-*
-    Response:
+
+- Response:
+
 ```Json
   [
     {
@@ -169,13 +181,14 @@ Explanation of how the routes work.
   ]
 ```
 
-  - # **PUT /items/:id**
+- # **PUT /items/:id**
 
-    Updates an existing item by `:id` in the URL.
+  Updates an existing item by `:id` in the URL.
 
-    **Exemple (using Insomnia):**
-*
-    Request body:
+  **Exemple (using Insomnia):**
+
+* Request body:
+
 ```Json
 {
       "name": "Updated Item 1",
@@ -186,8 +199,9 @@ Explanation of how the routes work.
       "height": "height"
 }
 ```
-*
-    Response:
+
+- Response:
+
 ```Json
   [
     {
@@ -206,13 +220,14 @@ Explanation of how the routes work.
   ]
 ```
 
-  - # **DELETE items/:id**
+- # **DELETE items/:id**
 
-    Deletes an existing item by `:id` in the URL.
+  Deletes an existing item by `:id` in the URL.
 
-    **Exemple (using Insomnia):**
-*
-    Response:
+  **Exemple (using Insomnia):**
+
+* Response:
+
 ```Json
 {
   "deleted": "true"
@@ -221,13 +236,14 @@ Explanation of how the routes work.
 
 # USERS
 
-  - # **POST /users**
+- # **POST /users**
 
-    Creates a new user.
+  Creates a new user.
 
-    **Exemple (using Insomnia):**
-*
-    Request body:
+  **Exemple (using Insomnia):**
+
+* Request body:
+
 ```Json
 {
   "name": "name",
@@ -235,8 +251,9 @@ Explanation of how the routes work.
   "password": "password"
 }
 ```
-*
-    Response:
+
+- Response:
+
 ```Json
 {
   "id": "#",
@@ -246,13 +263,14 @@ Explanation of how the routes work.
 }
 ```
 
-  - # **PUT /users:id**
+- # **PUT /users:id**
 
-    Edits an existing user by `:id` in the URL.
+  Edits an existing user by `:id` in the URL.
 
-    **Exemple (using Insomnia):**
-*
-    Request body:
+  **Exemple (using Insomnia):**
+
+* Request body:
+
 ```Json
 {
   "name": "updated_name",
@@ -260,8 +278,9 @@ Explanation of how the routes work.
   "password": "password"
 }
 ```
-*
-    Response:
+
+- Response:
+
 ```Json
 {
   "id": "#",
@@ -271,13 +290,14 @@ Explanation of how the routes work.
 }
 ```
 
-  - # **DELETE users/:id**
+- # **DELETE users/:id**
 
-    Deletes an existing user by `:id` in the URL.
+  Deletes an existing user by `:id` in the URL.
 
-    **Exemple (using Insomnia):**
-*
-    Response:
+  **Exemple (using Insomnia):**
+
+* Response:
+
 ```Json
 {
   "deleted": "true"
@@ -286,13 +306,15 @@ Explanation of how the routes work.
 
 # PHOTOS
 
-  - # **POST /photos**
+- # **POST /photos**
 
-    Uploads an image with a random and unique name and links it to the specified user in the URL.
+  Uploads an image with a random and unique name and links it to the specified
+  user in the URL.
 
-    **Exemple (using Insomnia):**
-*
-    Response:
+  **Exemple (using Insomnia):**
+
+* Response:
+
 ```Json
 {
   "originalname":"original name of the image",
@@ -303,38 +325,42 @@ Explanation of how the routes work.
 
 # TOKEN
 
-  - # **POST /tokens**
+- # **POST /tokens**
 
-    Logs in the user and generates an authorization token.
-    This token is required to create and edit cataloged Items.
+  Logs in the user and generates an authorization token. This token is required
+  to create and edit cataloged Items.
 
-    **Exemple (using Insomnia):**
-*
-    Request body:
+  **Exemple (using Insomnia):**
+
+* Request body:
+
 ```Json
 {
   "email":"emailcreatedinusersroute@email.com",
   "password":"correspondingpassword"
 }
 ```
-*
-    Response:
+
+- Response:
+
 ```Json
 {
   "token":"token_generated_by_JWT"
 }
 ```
+
     In Insomnia, the token is inserted in the Header tab.
 
 # HOME
 
-  - # **GET /**
+- # **GET /**
 
-    Shows the Home page
+  Shows the Home page
 
-    **Exemple (using Insomnia):**
-*
-    Response:
+  **Exemple (using Insomnia):**
+
+* Response:
+
 ```Json
 {
   "index"
@@ -343,20 +369,31 @@ Explanation of how the routes work.
 
 ## Extras
 
-- The application has `login_required` middlewares, which make certain actions require an authorization token to be performed.
+- **Technologies Used**
+    -Javascript
+    -NodeJS;
+    -Sequelize
+    -Express
+    -Multer
+    -MariaDB
+
+- The application has `login_required` middlewares, which make certain actions
+  require an authorization token to be performed.
 
 - All tests were done using [Insomnia](https://insomnia.rest/)
 
-- This is a project from the course I am taking on Udemy, with professor Luiz Otávio Miranda:  [Javascript Course](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/?couponCode=KEEPLEARNING)
-
-
+- This is a project from the course I am taking on Udemy, with professor Luiz
+  Otávio Miranda:
+  [Javascript Course](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/?couponCode=KEEPLEARNING)
 
 ## PORTUGUÊS
 
 ---
 
 ### API REST
-Uma API simples e eficiente com logins/registros por tokens e cadastro de pessoas.
+
+Uma API simples e eficiente com logins/registros por tokens e cadastro de
+pessoas.
 
 ## Índice
 
@@ -386,11 +423,14 @@ Uma API simples e eficiente com logins/registros por tokens e cadastro de pessoa
    - [**HOME**](#home-1)
    - [GET /](#get-home-1)
 
+5. [Extra](#extra)
+
 ## Instalação
 
 Instruções para baixar o repositório e instalar as dependências da API.
 
 No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
+
 - Clone o repositório: `git clone: <URL do repositório> `
 - Acesse a pasta do repositório clonado: `cd your_folder_name`
 - Instale as dependências: `npm install`
@@ -400,6 +440,7 @@ No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
 Instruções de como configurar corretamente o ambiente.
 
 - Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
+
 ```env
   DATABASE=SUA_DATABASE
   DATABASE_HOST=SUA_DATABASE_HOST
@@ -413,6 +454,7 @@ Instruções de como configurar corretamente o ambiente.
   APP_URL=http://localhost:
   APP_PORT=3001
 ```
+
 - Faça uma migração das tabelas usando o comando: `npx sequelize-cli db:migrate`
 
 ## Uso
@@ -420,6 +462,8 @@ Instruções de como configurar corretamente o ambiente.
 Instrução de como rodar a aplicação localmente.
 
 No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
+
+- Você precisa de um banco de dados (MariaDB), ele pode ser local (recomendo porta :3001)
 - Digite o seguinte comando: `npm run dev`
 
 ## Rotas da API
@@ -428,13 +472,14 @@ Explicação de como funcionam as rotas.
 
 # ITEMS
 
- - # **GET /items**
+- # **GET /items**
 
-   Retorna uma lista de todos os Items catalogados.
+  Retorna uma lista de todos os Items catalogados.
 
-   **Exemplo (usando Insomnia):**
-*
-   Resposta:
+  **Exemplo (usando Insomnia):**
+
+* Resposta:
+
 ```Json
   [
     {
@@ -454,13 +499,14 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - # **GET /items/:id**
+- # **GET /items/:id**
 
-    Retorna o item especificado pelo `:id` na URL.
+  Retorna o item especificado pelo `:id` na URL.
 
-    **Exemplo (usando Insomnia):**
-*
-    Resposta:
+  **Exemplo (usando Insomnia):**
+
+* Resposta:
+
 ```Json
   [
     {
@@ -480,13 +526,14 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - # **POST /items**
+- # **POST /items**
 
-    Cria um novo item.
+  Cria um novo item.
 
-    **Exemplo (usando Insomnia):**
-*
-    Corpo da requisição:
+  **Exemplo (usando Insomnia):**
+
+* Corpo da requisição:
+
 ```Json
 {
       "name": "Item #",
@@ -497,8 +544,9 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
-*
-    Resposta:
+
+- Resposta:
+
 ```Json
   [
     {
@@ -518,13 +566,14 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - # **PUT /items/:id**
+- # **PUT /items/:id**
 
-    Atualiza um item existente pelo `:id` na URL.
+  Atualiza um item existente pelo `:id` na URL.
 
-    **Exemplo (usando Insomnia):**
-*
-    Corpo da requisição:
+  **Exemplo (usando Insomnia):**
+
+* Corpo da requisição:
+
 ```Json
 {
       "name": "Item 1 atualizado",
@@ -535,8 +584,9 @@ Explicação de como funcionam as rotas.
       "height": "altura"
 }
 ```
-*
-    Resposta:
+
+- Resposta:
+
 ```Json
   [
     {
@@ -556,11 +606,12 @@ Explicação de como funcionam as rotas.
   ]
 ```
 
-  - # **DELETE items/:id**
+- # **DELETE items/:id**
 
-    Delete um item existente pelo `:id` na URL.
-*
-    Resposta:
+  Delete um item existente pelo `:id` na URL.
+
+* Resposta:
+
 ```Json
 {
   "deleted": "true"
@@ -569,13 +620,14 @@ Explicação de como funcionam as rotas.
 
 # USERS
 
-  - # **POST /users**
+- # **POST /users**
 
-    Cria um novo usuário.
+  Cria um novo usuário.
 
-    **Exemplo (usando Insomnia):**
-*
-    Corpo da requisição:
+  **Exemplo (usando Insomnia):**
+
+* Corpo da requisição:
+
 ```Json
 {
   "name": "name",
@@ -583,8 +635,9 @@ Explicação de como funcionam as rotas.
   "password": "password"
 }
 ```
-*
-    Resposta:
+
+- Resposta:
+
 ```Json
 {
   "id": "#",
@@ -594,13 +647,14 @@ Explicação de como funcionam as rotas.
 }
 ```
 
-  - # **PUT /users:id**
+- # **PUT /users:id**
 
-    Edita um usuário existente pelo `:id` na URL.
+  Edita um usuário existente pelo `:id` na URL.
 
-    **Exemplo (usando Insomnia):**
-*
-    Corpo da requisição:
+  **Exemplo (usando Insomnia):**
+
+* Corpo da requisição:
+
 ```Json
 {
   "name": "name_alterado",
@@ -608,8 +662,9 @@ Explicação de como funcionam as rotas.
   "password": "password"
 }
 ```
-*
-    Resposta:
+
+- Resposta:
+
 ```Json
 {
   "id": "#",
@@ -619,13 +674,14 @@ Explicação de como funcionam as rotas.
 }
 ```
 
-  - # **DELETE users/:id**
+- # **DELETE users/:id**
 
-    Delete um usuário existente pelo `:id` na URL.
+  Delete um usuário existente pelo `:id` na URL.
 
-    **Exemplo (usando Insomnia):**
-*
-    Resposta:
+  **Exemplo (usando Insomnia):**
+
+* Resposta:
+
 ```Json
 {
   "deleted": "true"
@@ -634,13 +690,15 @@ Explicação de como funcionam as rotas.
 
 # PHOTOS
 
-  - # **POST /photos**
+- # **POST /photos**
 
-    Envia uma imagem com nome aleatório e único e à liga com o usuário especificado na URL.
+  Envia uma imagem com nome aleatório e único e à liga com o usuário
+  especificado na URL.
 
-    **Exemplo (usando Insomnia):**
-*
-    Resposta:
+  **Exemplo (usando Insomnia):**
+
+* Resposta:
+
 ```Json
 {
   "originalname":"nome original da imagem",
@@ -651,49 +709,61 @@ Explicação de como funcionam as rotas.
 
 # TOKEN
 
-  - # **POST /tokens**
+- # **POST /tokens**
 
-    Loga o usuário e gera um token de autorização.
-    Esse token é necessário para criar e editar Items catalogados.
+  Loga o usuário e gera um token de autorização. Esse token é necessário para
+  criar e editar Items catalogados.
 
-    **Exemplo (usando Insomnia):**
-*
-    Corpo da requisição:
+  **Exemplo (usando Insomnia):**
+
+* Corpo da requisição:
+
 ```Json
 {
   "email":"emailcriadonarotausers@email.com",
   "password":"senhacorrespondente"
 }
 ```
-*
-    Resposta:
+
+- Resposta:
+
 ```Json
 {
   "token":"token_gerado_por_JWT"
 }
 ```
+
     No Insomnia, o token é inserido na aba Header.
 
 # HOME
 
-  - # **GET /**
+- # **GET /**
 
-    Mostra a Home page.
+  Mostra a Home page.
 
-    **Exemplo (usando Insomnia):**
-*
-    Resposta:
+  **Exemplo (usando Insomnia):**
+
+* Resposta:
+
 ```Json
 {
   "index"
 }
 ```
 
+## Extra
 
-## Extras
+- **Tecnologias usadas**
+    -NodeJS;
+    -React (ReactDOM, Redux, Reducer, Persist, Saga);
+    -HTML;
+    -CSS
 
-- A aplicação possui middlewared de `login_required`, fazendo com que certas ações necessitem de um token de autorização para serem realizadas.
+- A aplicação possui middlewared de `login_required`, fazendo com que certas
+  ações necessitem de um token de autorização para serem realizadas.
 
 - Todos os testes foram feitos usando [Insomnia](https://insomnia.rest/)
 
-- Este é um projeto do curso que estou fazendo na Udemy, com o professor Luiz Otávio Miranda: [Curso Javascript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/?couponCode=KEEPLEARNING)
+- Este é um projeto do curso que estou fazendo na Udemy, com o professor Luiz
+  Otávio Miranda:
+  [Curso Javascript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/?couponCode=KEEPLEARNING)

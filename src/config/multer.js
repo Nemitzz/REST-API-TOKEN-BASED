@@ -10,7 +10,9 @@ export default {
       file.mimetype !== 'image/jpg' &&
       file.mimetype !== 'image/jpeg'
     ) {
-      return cb(new multer.MulterError('file is no an image (PNG, JPG, JPEG)'));
+      return cb(
+        new multer.MulterError('file is not an image (PNG, JPG, JPEG)'),
+      );
     }
     return cb(null, true);
   },
