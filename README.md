@@ -9,6 +9,8 @@
 A simple and efficient API with token-based login/registration and person
 registration.
 
+---
+
 ## Index
 
 1. [Instalation](#instalation)
@@ -39,6 +41,8 @@ registration.
 
 5. [Extras](#extras)
 
+---
+
 ## Instalation
 
 Instructions for download the repository and install the API dependencies.
@@ -48,6 +52,8 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 - Clone the repository: `git clone <repository_url>`
 - Go to the cloned repository folder: `cd your_folder_name`
 - Install the dependencies: `npm install`
+
+---
 
 ## Configuration
 
@@ -72,6 +78,8 @@ Instructions on how to properly configure the environment.
 - Run a migration of the tables using the command:
   `npx sequelize-cli db:migrate`
 
+---
+
 ## Usage
 
 Instructions on how to run the application.
@@ -81,9 +89,13 @@ In your terminal (VSCode, GIT Bash, Windows Terminal, etc.):
 - You will need a database (MariaDB), it can be local
 - Run the following command: `npm run dev`
 
+---
+
 ## API Routes
 
 Explanation of how the routes work.
+
+---
 
 # ITEMS
 
@@ -234,6 +246,8 @@ Explanation of how the routes work.
 }
 ```
 
+---
+
 # USERS
 
 - # **POST /users**
@@ -304,6 +318,8 @@ Explanation of how the routes work.
 }
 ```
 
+---
+
 # PHOTOS
 
 - # **POST /photos**
@@ -322,6 +338,8 @@ Explanation of how the routes work.
   "item_id":"id of the item linked to the photo"
 }
 ```
+
+---
 
 # TOKEN
 
@@ -351,6 +369,8 @@ Explanation of how the routes work.
 
     In Insomnia, the token is inserted in the Header tab.
 
+---
+
 # HOME
 
 - # **GET /**
@@ -366,6 +386,8 @@ Explanation of how the routes work.
   "index"
 }
 ```
+
+---
 
 ## Extras
 
@@ -394,6 +416,8 @@ Explanation of how the routes work.
 
 Uma API simples e eficiente com logins/registros por tokens e cadastro de
 pessoas.
+
+---
 
 ## Índice
 
@@ -425,6 +449,8 @@ pessoas.
 
 5. [Extra](#extra)
 
+---
+
 ## Instalação
 
 Instruções para baixar o repositório e instalar as dependências da API.
@@ -434,6 +460,8 @@ No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
 - Clone o repositório: `git clone: <URL do repositório> `
 - Acesse a pasta do repositório clonado: `cd your_folder_name`
 - Instale as dependências: `npm install`
+
+---
 
 ## Configuração
 
@@ -457,6 +485,8 @@ Instruções de como configurar corretamente o ambiente.
 
 - Faça uma migração das tabelas usando o comando: `npx sequelize-cli db:migrate`
 
+---
+
 ## Uso
 
 Instrução de como rodar a aplicação localmente.
@@ -466,9 +496,13 @@ No seu terminal (VSCode, GIT Bash, Terminal Windows, etc.):
 - Você precisa de um banco de dados (MariaDB), ele pode ser local (recomendo porta :3001)
 - Digite o seguinte comando: `npm run dev`
 
+---
+
 ## Rotas da API
 
 Explicação de como funcionam as rotas.
+
+---
 
 # ITEMS
 
@@ -618,6 +652,8 @@ Explicação de como funcionam as rotas.
 }
 ```
 
+---
+
 # USERS
 
 - # **POST /users**
@@ -688,6 +724,8 @@ Explicação de como funcionam as rotas.
 }
 ```
 
+---
+
 # PHOTOS
 
 - # **POST /photos**
@@ -706,6 +744,8 @@ Explicação de como funcionam as rotas.
   "item_id":"id do item ligado à foto"
 }
 ```
+
+---
 
 # TOKEN
 
@@ -735,6 +775,8 @@ Explicação de como funcionam as rotas.
 
     No Insomnia, o token é inserido na aba Header.
 
+---
+
 # HOME
 
 - # **GET /**
@@ -750,6 +792,8 @@ Explicação de como funcionam as rotas.
   "index"
 }
 ```
+
+---
 
 ## Extra
 
